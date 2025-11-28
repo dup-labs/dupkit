@@ -1,0 +1,18 @@
+.videoCaroussel {
+    // padding: 0 $containerSpacing;
+
+    .videoCarousselItem {
+        max-width: 1400px;
+        padding: 10px;
+
+        @media (max-width: $mobile) {
+            max-width: 320px;    
+        }
+
+        .videoCarousselItemVideo {
+            width: 100%;
+            border-radius: 20px;
+            overflow: hidden;
+        }
+    }
+}
