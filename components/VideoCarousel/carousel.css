@@ -1,0 +1,298 @@
+/* slick theme */
+
+/* Slider */
+
+.sliderContainerStories {
+}
+
+/* Arrows */
+.sliderContainerStories :global(.slick-prev),
+.sliderContainerStories :global(.slick-next)
+{
+  font-size: 0;
+  line-height: 0;
+  position: absolute;
+  top: 50%;
+  display: block;
+  width: 20px;
+  height: 20px;
+  padding: 0;
+  -webkit-transform: translate(0, -50%);
+  -ms-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+  cursor: pointer;
+  color: transparent;
+  border: none;
+  outline: none;
+  background: transparent;
+}
+
+/* rever */
+.sliderContainerStories :global(.slick-prev):hover,
+.sliderContainerStories :global(.slick-prev):focus,
+.sliderContainerStories :global(.slick-next):hover,
+.sliderContainerStories :global(.slick-next):focus{
+  color: transparent;
+  outline: none;
+  background: transparent;
+}
+/* rever */
+
+.sliderContainerStories :global(.slick-prev):hover:before,
+.sliderContainerStories :global(.slick-prev):focus:before,
+.sliderContainerStories :global(.slick-next):hover:before,
+.sliderContainerStories :global(.slick-next):focus:before{
+  opacity: 1;
+}
+
+.sliderContainerStories :global(.slick-prev.slick-disabled):before,
+.sliderContainerStories :global(.slick-next.slick-disabled):before{
+  opacity: .25;
+}
+
+.sliderContainerStories :global(.slick-prev):before,
+.sliderContainerStories :global(.slick-next):before{
+  font-size: 20px;
+  line-height: 1;
+  opacity: .75;
+  color: white;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.sliderContainerStories :global(.slick-prev){
+  left: 0;
+}
+
+/* rever */
+.sliderContainerStories :global([dir='rtl'] .slick-prev){
+  right: -25px;
+  left: auto;
+}
+
+.sliderContainerStories :global(.slick-prev):before{
+  content: '';
+  background-image: url("data:image/svg+xml,%3Csvg width='18' height='28' viewBox='0 0 18 28' aria-hidden='true' xmlns='http://www.w3.org/2000/svg' class='Icon__StyledSVG-lm07h6-0 kFGAmn Chevronstyles__ChevronIcon-sc-1qql32m-0 cEWHhy GlobalBannerstyles__ControlIcon-adnc4-6 dzgWcn' data-di-res-id='ea6635c0-367fd6bc' data-di-rand='1686764447293'%3E%3Cpath d='M1.825 28L18 14 1.825 0 0 1.715 14.196 14 0 26.285z' fill='currentColor'%3E%3C/path%3E%3C/svg%3E");
+  transform: rotate(180deg);
+  width: 18px;
+  height: 18px;
+  background-size: 100% 100%;
+  display: flex;
+}
+
+.sliderContainerStories :global([dir='rtl'] .slick-prev):before{
+  content: '→';
+}
+
+.sliderContainerStories :global(.slick-next){
+  right: 0;
+}
+
+.sliderContainerStories :global([dir='rtl'] .slick-next){
+  right: auto;
+  left: -25px;
+}
+
+.sliderContainerStories :global(.slick-next):before{
+  content: '';
+  background-image: url("data:image/svg+xml,%3Csvg width='18' height='28' viewBox='0 0 18 28' aria-hidden='true' xmlns='http://www.w3.org/2000/svg' class='Icon__StyledSVG-lm07h6-0 kFGAmn Chevronstyles__ChevronIcon-sc-1qql32m-0 cEWHhy GlobalBannerstyles__ControlIcon-adnc4-6 dzgWcn' data-di-res-id='ea6635c0-367fd6bc' data-di-rand='1686764447293'%3E%3Cpath d='M1.825 28L18 14 1.825 0 0 1.715 14.196 14 0 26.285z' fill='currentColor'%3E%3C/path%3E%3C/svg%3E");
+  width: 18px;
+  height: 18px;
+  background-size: 100% 100%;
+  display: flex;
+}
+
+.sliderContainerStories :global([dir='rtl'] .slick-next):before{
+  content: '←';
+}
+
+/* Dots */
+.sliderContainerStories :global(.slick-dotted.slick-slider){
+  margin-bottom: 30px;
+}
+
+.sliderContainerStories :global(.slick-dots){
+  position: absolute;
+  bottom: -25px;
+  display: block;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-align: center;
+}
+
+.sliderContainerStories :global(.slick-dots) li{
+  position: relative;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin: 0 5px;
+  padding: 0;
+  cursor: pointer;
+}
+
+.sliderContainerStories :global(.slick-dots) li button{
+  font-size: 0;
+  line-height: 0;
+  display: block;
+  width: 20px;
+  height: 20px;
+  padding: 5px;
+  cursor: pointer;
+  color: transparent;
+  border: 0;
+  outline: none;
+  background: transparent;
+}
+
+.sliderContainerStories :global(.slick-dots) li button:hover,
+.sliderContainerStories :global(.slick-dots) li button:focus{
+  outline: none;
+}
+
+.sliderContainerStories :global(.slick-dots) li button:hover:before,
+.sliderContainerStories :global(.slick-dots) li button:focus:before{
+  opacity: 1;
+}
+
+.sliderContainerStories :global(.slick-dots) li button:before{
+  font-size: 6px;
+  line-height: 20px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  content: '•';
+  text-align: center;
+  opacity: .25;
+  color: black;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.sliderContainerStories :global(.slick-dots) li:global(.slick-active) button:before{
+  opacity: .75;
+  color: black;
+}
+
+/* end slick theme */
+
+/* slick css */
+/* Slider */
+.sliderContainerStories :global(.slick-slider){
+  position: relative;
+
+  display: block;
+  box-sizing: border-box;
+
+  -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+
+  -webkit-touch-callout: none;
+  -khtml-user-select: none;
+  -ms-touch-action: pan-y;
+      touch-action: pan-y;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.sliderContainerStories :global(.slick-list){
+  position: relative;
+
+  display: block;
+  overflow: hidden;
+
+  margin: 0;
+  padding: 0;
+}
+
+.sliderContainerStories :global(.slick-list):focus{
+  outline: none;
+}
+
+.sliderContainerStories :global(.slick-list.dragging){
+  cursor: pointer;
+  cursor: hand;
+}
+
+.sliderContainerStories :global(.slick-slider) :global(.slick-track),
+.sliderContainerStories :global(.slick-slider) :global(.slick-list){
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  -ms-transform: translate3d(0, 0, 0);
+  -o-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+
+.sliderContainerStories :global(.slick-track){
+  position: relative;
+  top: 0;
+  left: 0;
+
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.sliderContainerStories :global(.slick-track):before,
+.sliderContainerStories :global(.slick-track):after{
+  display: table;
+  content: '';
+}
+
+.sliderContainerStories :global(.slick-track):after{
+  clear: both;
+}
+
+.sliderContainerStories :global(.slick-loading)  :global(.slick-track){
+  visibility: hidden;
+}
+
+.sliderContainerStories :global(.slick-slide){
+  display: none;
+  float: left;
+  height: 100%;
+  min-height: 1px;
+}
+
+.sliderContainerStories :global([dir='rtl'] .slick-slide){
+  float: right;
+}
+
+.sliderContainerStories :global(.slick-slide) img{
+  display: block;
+  /* width: 100%;
+  height: auto; */
+}
+
+.sliderContainerStories :global(.slick-slide.slick-loading) img{
+  display: none;
+}
+
+.sliderContainerStories :global(.slick-slide.dragging) img{
+  pointer-events: none;
+}
+
+.sliderContainerStories :global(.slick-initialized) :global(.slick-slide){
+  display: block;
+}
+
+.sliderContainerStories :global(.slick-loading) :global(.slick-slide){
+  visibility: hidden;
+}
+
+.sliderContainerStories :global(.slick-vertical) :global(.slick-slide){
+  display: block;
+  height: auto;
+  border: 1px solid transparent;
+}
+
+.sliderContainerStories :global(.slick-arrow.slick-hidden) {
+  display: none;
+}
+/* end slick css */
+
+/* custom */
